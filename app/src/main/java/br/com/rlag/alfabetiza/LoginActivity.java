@@ -109,9 +109,9 @@ public class LoginActivity extends AppCompatActivity {
         if (user != null) {
             // Ir para a próxima tela
             Toast.makeText(LoginActivity.this, "Login realizado com sucesso", Toast.LENGTH_SHORT).show();
-            // Intent intent = new Intent(LoginActivity.this, NextActivity.class);
-            // startActivity(intent);
-            // finish();
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
 }
